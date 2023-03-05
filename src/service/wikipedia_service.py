@@ -29,9 +29,11 @@ def _is_valid_wiki_link(link: Tag) -> bool:
 
     if (
         "#" in link["href"]
-        or "Special:BookSources" in link["href"]
+        or "?" in link["href"]
+        or "Special:Book" in link["href"]
         or "PMC_(identifier)" in link["href"]
         or "ISBN_(identifier)" in link["href"]
+        or "Help:IPA" in link["href"]
     ):
         return False
 
@@ -51,7 +53,7 @@ def get_related_titles(title: str) -> Collection[WikipediaPageLink]:
 
     return [
         WikipediaPageLink(
-            href=link["href"],
+            slug=link["href"].replace("./", ""),
             title=link["title"],
         )
         for link in soup.find_all("a", {"rel": "mw:WikiLink"})
