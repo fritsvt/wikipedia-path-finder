@@ -24,7 +24,7 @@ jobs:
           poetry install
       - name: Make nice
         run: |
-          pwd && make nice
+          pwd && ls && make nice
       - name: Tests
         run: |
           make tests

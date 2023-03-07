@@ -8,5 +8,5 @@ class WikipediaPageLink:
     slug: str
     title: str
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"https://en.wikipedia.org/wiki/{self.slug}"
