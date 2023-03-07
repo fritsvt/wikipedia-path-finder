@@ -5,4 +5,6 @@ if __name__ == "__main__":
     second_title = "iPhone"
 
     result = find_shortest_path(first_title, second_title)
-    print(result)
+
+    for path in result:
+        print(path)

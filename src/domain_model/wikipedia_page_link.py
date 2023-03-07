@@ -7,3 +7,6 @@ from dataclasses import dataclass
 class WikipediaPageLink:
     slug: str
     title: str
+
+    def __str__(self):
+        return f"https://en.wikipedia.org/wiki/{self.slug}"
