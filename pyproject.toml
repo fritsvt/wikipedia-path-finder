@@ -3,6 +3,7 @@ line-length = 88
 
 [tool.poetry]
 name = "wikiracer"
+description = "WikiRacer"
 version = "0.1.0"
 authors = ["Frits <frits.vanturnhout@gmail.com>"]
 
