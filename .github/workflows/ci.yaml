@@ -24,7 +24,7 @@ jobs:
           poetry install
       - name: Make nice
         run: |
-          source .envrc && make nice
+          pwd && make nice
       - name: Tests
         run: |
           make tests
