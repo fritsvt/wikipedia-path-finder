@@ -22,9 +22,9 @@ jobs:
       - name: Install dependencies
         run: |
           poetry install
-      - name: Make nice
+      - name: Code quality
         run: |
-          pwd && ls && poetry run make nice
+          poetry run make nice
       - name: Tests
         run: |
           poetry run make tests
