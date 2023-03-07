@@ -1,3 +1,0 @@
-href  # unused variable (src/domain_model/wikipedia.py:6)
-first_title  # unused variable (src/main.py:2)
-second_title  # unused variable (src/main.py:3)
