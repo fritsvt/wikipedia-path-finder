@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import typer
 from rich.console import Console
 from rich.text import Text
@@ -9,6 +11,8 @@ console = Console()
 
 
 def main(first_title: str, second_title: str) -> None:
+    start = datetime.now()
+
     with console.status(
         f"[bold green] Finding a link between {first_title} and {second_title}..."
     ):
@@ -26,6 +30,10 @@ def main(first_title: str, second_title: str) -> None:
 
         text.append(f"{path.title} ({path})")
         console.print(text)
+
+    console.print(
+        f"Path found! Took: {(datetime.now() - start).total_seconds()} seconds"
+    )
 
 
 if __name__ == "__main__":
