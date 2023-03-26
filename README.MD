@@ -38,7 +38,7 @@ source .envrc
 ```
 6. Run the app
 ```
-python src/wikiracer.py
+python src/wikiracer.py FIRST_TITLE SECOND_TITLE     
 ```
 
 ## Running tests
@@ -67,6 +67,10 @@ or `make format` to run all formatting except mypy
 [Pytest](https://docs.pytest.org/en/7.2.x/)
 
 [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/)
+
+[Typer](https://typer.tiangolo.com/)
+
+[Rich](https://github.com/Textualize/rich
 
 [Mypy](https://mypy-lang.org/)
 
