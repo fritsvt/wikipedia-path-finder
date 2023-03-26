@@ -11,6 +11,7 @@ A more efficient implementation could use the [pagelinks](https://dumps.wikimedi
 ## Requirements
 
 - Python 3.11
+- Poetry 1.4.0
 
 ## Installation
 
@@ -48,11 +49,10 @@ make tests
 ```
 
 ## Code quality
-To ensure code quality type checking and linting tools are used linters and type checking
-has been setup.
+To ensure code quality, type checking and linting tools have been configured.
 
 Although before every commit `make` should be run to ensure the tests are green and
-the linters are happy to only run type checking and formatting you can run:
+the linters are happy it's also possible to only run the linters using:
 ```
 make nice
 ```
@@ -70,7 +70,7 @@ or `make format` to run all formatting except mypy
 
 [Typer](https://typer.tiangolo.com/)
 
-[Rich](https://github.com/Textualize/rich
+[Rich](https://github.com/Textualize/rich)
 
 [Mypy](https://mypy-lang.org/)
 
